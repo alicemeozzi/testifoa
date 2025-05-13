@@ -3,15 +3,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import streamlit as st
 import seaborn as sns
-
-from sklearn.pipeline import make_pipeline,Pipeline
-from sklearn.compose import make_column_transformer
-from sklearn.impute import SimpleImputer
-from sklearn.preprocessing import KBinsDiscretizer,OneHotEncoder,StandardScaler,FunctionTransformer
-from sklearn.svm import SVC
-from sklearn.model_selection import train_test_split
-from sklearn.model_selection import cross_val_score
-
 import joblib
 
 # dataset = https://frenzy86.s3.eu-west-2.amazonaws.com/fav/iris.data
