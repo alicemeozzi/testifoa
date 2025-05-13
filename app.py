@@ -11,6 +11,7 @@ def main():
     st.title('prima app')
     url = st.text_input('Incolla dataset url:',"https://frenzy86.s3.eu-west-2.amazonaws.com/fav/iris.data")
     df = pd.read_csv(url,header=None)
+    df.columns = ['sepal length', 'sepal width', 'petal length', 'petal width', 'class']
     df1 = df.copy()
     st.dataframe(df1)
 
